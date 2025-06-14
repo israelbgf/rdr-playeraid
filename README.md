@@ -1,0 +1,1 @@
+Simple player aid to the game Red Dust Rebellion. Based on the original playeraid created by `oneofneko`, download the original at https://boardgamegeek.com/filepage/295774/player-aid.

@@ -1,63 +1,80 @@
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <style>
-    .icon-support-stack {
-        position: relative;
-        height: 20px;
-        display: inline-block;
-        min-width: 50px; /* enough for 5 icons with 50% overlap */
-        vertical-align: middle;
-    }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        .icon-support-stack {
+            position: relative;
+            height: 20px;
+            display: inline-block;
+            min-width: 50px; /* enough for 5 icons with 50% overlap */
+            vertical-align: middle;
+        }
 
-    .icon-support {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        top: 0;
-    }
+        .icon-support {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+        }
 
-    .icon-support:nth-child(1) {
-        left: 0px;
-        z-index: 5;
-    }
+        .icon-support:nth-child(1) {
+            left: 0px;
+            z-index: 5;
+        }
 
-    .icon-support:nth-child(2) {
-        left: 10px;
-        z-index: 4;
-    }
+        .icon-support:nth-child(2) {
+            left: 10px;
+            z-index: 4;
+        }
 
-    .icon-support:nth-child(3) {
-        left: 20px;
-        z-index: 3;
-    }
+        .icon-support:nth-child(3) {
+            left: 20px;
+            z-index: 3;
+        }
 
-    .icon-support:nth-child(4) {
-        left: 30px;
-        z-index: 2;
-    }
+        .icon-support:nth-child(4) {
+            left: 30px;
+            z-index: 2;
+        }
 
-    .icon-support:nth-child(5) {
-        left: 40px;
-        z-index: 1;
-    }
+        .icon-support:nth-child(5) {
+            left: 40px;
+            z-index: 1;
+        }
 
-    .first-col-flex {
-        display: flex;
-        align-items: center;
-    }
+        .first-col-flex {
+            display: flex;
+            align-items: center;
+        }
 
-    .first-col-flex .icon-support-stack {
-        flex-shrink: 0;
-        margin-right: 20px; /* increased margin for 5 icons */
-    }
+        .first-col-flex .icon-support-stack {
+            flex-shrink: 0;
+            margin-right: 20px; /* increased margin for 5 icons */
+        }
 
-    .first-col-flex .action-text {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        height: 20px;
-    }
-  </style>
+        .first-col-flex .action-text {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            height: 20px;
+        }
+
+th:nth-child(2), td:nth-child(2) {
+    background-color: #e6f0ff; /* Light blue for MG */
+}
+
+th:nth-child(3), td:nth-child(3) {
+    background-color: #d5d5d5; /* Light gray/black for Corp */
+}
+
+th:nth-child(4), td:nth-child(4) {
+    background-color: #ffe6e6; /* Light red for RD */
+}
+
+th:nth-child(5), td:nth-child(5) {
+    background-color: #fff2e6; /* Light orange for CR */
+}
+
+    </style>
 </head>
 <body>
 <table class="table table-bordered table-striped table-hover align-middle">
