@@ -1,0 +1,362 @@
+<style>
+    .icon-support-stack {
+        position: relative;
+        height: 20px;
+        display: inline-block;
+        min-width: 38px; /* enough for 4 icons with 50% overlap */
+        vertical-align: middle;
+    }
+
+    .icon-support {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+    }
+
+    .icon-support:nth-child(1) {
+        left: 0px;
+        z-index: 5;
+    }
+
+    .icon-support:nth-child(2) {
+        left: 10px;
+        z-index: 4;
+    }
+
+    .icon-support:nth-child(3) {
+        left: 20px;
+        z-index: 3;
+    }
+
+    .icon-support:nth-child(4) {
+        left: 30px;
+        z-index: 2;
+    }
+
+    .icon-support:nth-child(5) {
+        left: 40px;
+        z-index: 1;
+    }
+
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+
+    .action-text {
+        width: 100%;
+    }
+</style>
+<table>
+    <tr>
+        <th></th>
+        <th>MG</th>
+        <th>Corp</th>
+        <th>RD</th>
+        <th>CR</th>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/Track%20EG+.png" class="icon-support">
+                <img src="icons/Track%20EG-.png" class="icon-support">
+            </span>
+            <span class="action-text">Earth support (+/-)</span>
+        </td>
+        <td>House & Repair (Train, Secure, Recon), Petition</td>
+        <td>House & Repair (Secure, Recon), Raid</td>
+        <td>House & Repair, Campaign</td>
+        <td>Preach</td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/SupOpp%20Support2.png" class="icon-support">
+            </span>
+            <span class="action-text">MG Support</span>
+        </td>
+        <td>Train</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/SupOpp%20Support1.png" class="icon-support">
+            </span>
+            <span class="action-text">Neutral support</span>
+        </td>
+        <td>Assault (EG - Suppress)</td>
+        <td>Assault (EG - Suppress), Exploit</td>
+        <td></td>
+        <td>Preach</td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/SupOpp%20Opposition1.png" class="icon-support">
+            </span>
+            <span class="action-text">MG Opposition</span>
+        </td>
+        <td></td>
+        <td></td>
+        <td>Campaign, Coordinate</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/Pop.png" class="icon-support">
+                <img src="icons/Damage.png" class="icon-support">
+            </span>
+            <span class="action-text">House & Repair</span>
+        </td>
+        <td>Train, Secure, Recon</td>
+        <td>Secure, Recon, Public relations</td>
+        <td>Coordinate</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/Damage.png" class="icon-support">
+            </span>
+            <span class="action-text">Damage</span>
+        </td>
+        <td>Assault (EG - Bombard)</td>
+        <td>Assault (EG - Bombard)</td>
+        <td>Attack</td>
+        <td>Attack, Preach</td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/MarGov%20Troops.png" class="icon-support">
+                <img src="icons/CORP%20Security.png" class="icon-support">
+                <img src="icons/RD%20Rebels.png" class="icon-support">
+                <img src="icons/CR%20Rebels.png" class="icon-support">
+            </span>
+            <span class="action-text">Troops</span>
+        </td>
+        <td>Train</td>
+        <td>Logistics</td>
+        <td>Rally, Coordinate</td>
+        <td>Rally, Preach, Purify</td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/MarGov%20Base.png" class="icon-support">
+                <img src="icons/CORP%20Base.png" class="icon-support">
+                <img src="icons/RB%20Base.png" class="icon-support">
+                <img src="icons/CR%20Base.png" class="icon-support">
+            </span>
+            <span class="action-text">Bases</span>
+        </td>
+        <td>Secure, Recon, Entrench</td>
+        <td>Secure, Recon</td>
+        <td>Rally</td>
+        <td>Rally, Attack</td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/CORP%20Base-a.png" class="icon-support">
+                <img src="icons/RB%20Base-a.png" class="icon-support">
+                <img src="icons/CR%20Base-a.png" class="icon-support">
+            </span>
+            <span class="action-text">Special Bases</span>
+        </td>
+        <td></td>
+        <td>Logistics</td>
+        <td>Rally</td>
+        <td>Rally, Purify</td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/Icon_Undo.png" class="icon-support">
+            </span>
+            <span class="action-text">Move</span>
+        </td>
+        <td>Secure, Recon, Transport</td>
+        <td>Secure, Recon, Raid</td>
+        <td>March</td>
+        <td>Travel</td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/MarGov%20Troops.png" class="icon-support">
+                <img src="icons/CORP%20Security.png" class="icon-support">
+                <img src="icons/RD%20Rebels.png" class="icon-support">
+                <img src="icons/CR%20Rebels.png" class="icon-support">
+            </span>
+            <span class="action-text">Remove enemy forces</span>
+        </td>
+        <td>Assault/EG - Bombard</td>
+        <td>Assault/EG - Bombard, Raid</td>
+        <td>Attack/Ambush, Coordinate</td>
+        <td>Attack/Ambush, Purify</td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/RD%20Rebels-a.png" class="icon-support">
+                <img src="icons/CR%20Rebels-a.png" class="icon-support">
+            </span>
+            <span class="action-text">Reveal enemy forces</span>
+        </td>
+        <td>Secure, Recon/EG - NavBeacons</td>
+        <td>Secure, Recon/EG - NavBeacons</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/RD%20Rebels.png" class="icon-support">
+                <img src="icons/CR%20Rebels.png" class="icon-support">
+            </span>
+            <span class="action-text">Hide rebels</span>
+        </td>
+        <td></td>
+        <td></td>
+        <td>Rally, March</td>
+        <td>Rally, Travel</td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/EarthGov%20Troops.png" class="icon-support">
+                <img src="icons/RD%20Rebels-a.png" class="icon-support">
+                <img src="icons/RD%20Rebels.png" class="icon-support">
+                <img src="icons/CR%20Rebels.png" class="icon-support">
+                <img src="icons/CR%20Rebels-a.png" class="icon-support">
+            </span>
+            <span class="action-text">Move enemy forces</span>
+        </td>
+        <td>Assault (EG - Suppress)</td>
+        <td>Assault (EG - Suppress)</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/Track%20Profits.png" class="icon-support">
+            </span>
+            <span class="action-text">Increase Profits</span>
+        </td>
+        <td>Assault (Corp - Mercenaries)</td>
+        <td>Assault, Public relations, Exploit</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/Track%20Profits.png" class="icon-support">
+            </span>
+            <span class="action-text">Reduce profits</span>
+        </td>
+        <td>Petition</td>
+        <td></td>
+        <td>Campaign</td>
+        <td>Conversion centers (in deserts)</td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/MarGov%20Troops.png" class="icon-support">
+                <img src="icons/Pop.png" class="icon-support">
+                <img src="icons/Damage.png" class="icon-support">
+            </span>
+            <span class="action-text">Fortify</span>
+        </td>
+        <td>Entrench</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/MarGov%20Pawn.png" class="icon-support">
+            </span>
+            <span class="action-text">MG resources</span>
+        </td>
+        <td>Petition, Pass</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/RD%20Pawn.png" class="icon-support">
+            </span>
+            <span class="action-text">RD resources</span>
+        </td>
+        <td></td>
+        <td>Exploit</td>
+        <td>Redistribute, Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/Campaign%20Back.jpg" class="icon-support">
+            </span>
+            <span class="action-text">Campaign cards</span>
+        </td>
+        <td></td>
+        <td></td>
+        <td>Campaign</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/Asset%20Card%20Back.jpg" class="icon-support">
+            </span>
+            <span class="action-text">Asset cards</span>
+        </td>
+        <td></td>
+        <td>Exploit</td>
+        <td></td>
+        <td>Ransack, Pass</td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/Icon_Reset.png" class="icon-support">
+            </span>
+            <span class="action-text">Aldrin Cycler</span>
+        </td>
+        <td></td>
+        <td>Logistics, Pass</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <span class="icon-support-stack">
+                <img src="icons/Storm%20Raging.png" class="icon-support">
+            </span>
+            <span class="action-text">Act in Raging Storm</span>
+        </td>
+        <td>EG-Satellites</td>
+        <td>EG-Satellites</td>
+        <td></td>
+        <td>Travel</td>
+    </tr>
+</table>
