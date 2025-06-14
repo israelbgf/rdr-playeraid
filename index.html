@@ -3,7 +3,7 @@
         position: relative;
         height: 20px;
         display: inline-block;
-        min-width: 38px; /* enough for 4 icons with 50% overlap */
+        min-width: 50px; /* enough for 5 icons with 50% overlap */
         vertical-align: middle;
     }
 
@@ -50,8 +50,21 @@
         padding: 8px;
     }
 
-    .action-text {
-        width: 100%;
+    .first-col-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .first-col-flex .icon-support-stack {
+        flex-shrink: 0;
+        margin-right: 20px; /* increased margin for 5 icons */
+    }
+
+    .first-col-flex .action-text {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        height: 20px;
     }
 </style>
 <table>
@@ -64,11 +77,13 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/Track%20EG+.png" class="icon-support">
-                <img src="icons/Track%20EG-.png" class="icon-support">
-            </span>
-            <span class="action-text">Earth support (+/-)</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/Track%20EG+.png" class="icon-support">
+                    <img src="icons/Track%20EG-.png" class="icon-support">
+                </span>
+                <span class="action-text">Earth support (+/-)</span>
+            </div>
         </td>
         <td>House & Repair (Train, Secure, Recon), Petition</td>
         <td>House & Repair (Secure, Recon), Raid</td>
@@ -77,10 +92,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/SupOpp%20Support2.png" class="icon-support">
-            </span>
-            <span class="action-text">MG Support</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/SupOpp%20Support2.png" class="icon-support">
+                </span>
+                <span class="action-text">MG Support</span>
+            </div>
         </td>
         <td>Train</td>
         <td></td>
@@ -89,10 +106,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/SupOpp%20Support1.png" class="icon-support">
-            </span>
-            <span class="action-text">Neutral support</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/SupOpp%20Support1.png" class="icon-support">
+                </span>
+                <span class="action-text">Neutral support</span>
+            </div>
         </td>
         <td>Assault (EG - Suppress)</td>
         <td>Assault (EG - Suppress), Exploit</td>
@@ -101,10 +120,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/SupOpp%20Opposition1.png" class="icon-support">
-            </span>
-            <span class="action-text">MG Opposition</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/SupOpp%20Opposition1.png" class="icon-support">
+                </span>
+                <span class="action-text">MG Opposition</span>
+            </div>
         </td>
         <td></td>
         <td></td>
@@ -113,11 +134,13 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/Pop.png" class="icon-support">
-                <img src="icons/Damage.png" class="icon-support">
-            </span>
-            <span class="action-text">House & Repair</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/Pop.png" class="icon-support">
+                    <img src="icons/Damage.png" class="icon-support">
+                </span>
+                <span class="action-text">House & Repair</span>
+            </div>
         </td>
         <td>Train, Secure, Recon</td>
         <td>Secure, Recon, Public relations</td>
@@ -126,10 +149,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/Damage.png" class="icon-support">
-            </span>
-            <span class="action-text">Damage</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/Damage.png" class="icon-support">
+                </span>
+                <span class="action-text">Damage</span>
+            </div>
         </td>
         <td>Assault (EG - Bombard)</td>
         <td>Assault (EG - Bombard)</td>
@@ -138,13 +163,15 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/MarGov%20Troops.png" class="icon-support">
-                <img src="icons/CORP%20Security.png" class="icon-support">
-                <img src="icons/RD%20Rebels.png" class="icon-support">
-                <img src="icons/CR%20Rebels.png" class="icon-support">
-            </span>
-            <span class="action-text">Troops</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/MarGov%20Troops.png" class="icon-support">
+                    <img src="icons/CORP%20Security.png" class="icon-support">
+                    <img src="icons/RD%20Rebels.png" class="icon-support">
+                    <img src="icons/CR%20Rebels.png" class="icon-support">
+                </span>
+                <span class="action-text">Troops</span>
+            </div>
         </td>
         <td>Train</td>
         <td>Logistics</td>
@@ -153,13 +180,15 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/MarGov%20Base.png" class="icon-support">
-                <img src="icons/CORP%20Base.png" class="icon-support">
-                <img src="icons/RB%20Base.png" class="icon-support">
-                <img src="icons/CR%20Base.png" class="icon-support">
-            </span>
-            <span class="action-text">Bases</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/MarGov%20Base.png" class="icon-support">
+                    <img src="icons/CORP%20Base.png" class="icon-support">
+                    <img src="icons/RB%20Base.png" class="icon-support">
+                    <img src="icons/CR%20Base.png" class="icon-support">
+                </span>
+                <span class="action-text">Bases</span>
+            </div>
         </td>
         <td>Secure, Recon, Entrench</td>
         <td>Secure, Recon</td>
@@ -168,12 +197,14 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/CORP%20Base-a.png" class="icon-support">
-                <img src="icons/RB%20Base-a.png" class="icon-support">
-                <img src="icons/CR%20Base-a.png" class="icon-support">
-            </span>
-            <span class="action-text">Special Bases</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/CORP%20Base-a.png" class="icon-support">
+                    <img src="icons/RB%20Base-a.png" class="icon-support">
+                    <img src="icons/CR%20Base-a.png" class="icon-support">
+                </span>
+                <span class="action-text">Special Bases</span>
+            </div>
         </td>
         <td></td>
         <td>Logistics</td>
@@ -182,10 +213,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/Icon_Undo.png" class="icon-support">
-            </span>
-            <span class="action-text">Move</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/Icon_Undo.png" class="icon-support">
+                </span>
+                <span class="action-text">Move</span>
+            </div>
         </td>
         <td>Secure, Recon, Transport</td>
         <td>Secure, Recon, Raid</td>
@@ -194,13 +227,15 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/MarGov%20Troops.png" class="icon-support">
-                <img src="icons/CORP%20Security.png" class="icon-support">
-                <img src="icons/RD%20Rebels.png" class="icon-support">
-                <img src="icons/CR%20Rebels.png" class="icon-support">
-            </span>
-            <span class="action-text">Remove enemy forces</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/MarGov%20Troops.png" class="icon-support">
+                    <img src="icons/CORP%20Security.png" class="icon-support">
+                    <img src="icons/RD%20Rebels.png" class="icon-support">
+                    <img src="icons/CR%20Rebels.png" class="icon-support">
+                </span>
+                <span class="action-text">Remove enemy forces</span>
+            </div>
         </td>
         <td>Assault/EG - Bombard</td>
         <td>Assault/EG - Bombard, Raid</td>
@@ -209,11 +244,13 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/RD%20Rebels-a.png" class="icon-support">
-                <img src="icons/CR%20Rebels-a.png" class="icon-support">
-            </span>
-            <span class="action-text">Reveal enemy forces</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/RD%20Rebels-a.png" class="icon-support">
+                    <img src="icons/CR%20Rebels-a.png" class="icon-support">
+                </span>
+                <span class="action-text">Reveal enemy forces</span>
+            </div>
         </td>
         <td>Secure, Recon/EG - NavBeacons</td>
         <td>Secure, Recon/EG - NavBeacons</td>
@@ -222,11 +259,13 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/RD%20Rebels.png" class="icon-support">
-                <img src="icons/CR%20Rebels.png" class="icon-support">
-            </span>
-            <span class="action-text">Hide rebels</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/RD%20Rebels.png" class="icon-support">
+                    <img src="icons/CR%20Rebels.png" class="icon-support">
+                </span>
+                <span class="action-text">Hide rebels</span>
+            </div>
         </td>
         <td></td>
         <td></td>
@@ -235,14 +274,16 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/EarthGov%20Troops.png" class="icon-support">
-                <img src="icons/RD%20Rebels-a.png" class="icon-support">
-                <img src="icons/RD%20Rebels.png" class="icon-support">
-                <img src="icons/CR%20Rebels.png" class="icon-support">
-                <img src="icons/CR%20Rebels-a.png" class="icon-support">
-            </span>
-            <span class="action-text">Move enemy forces</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/EarthGov%20Troops.png" class="icon-support">
+                    <img src="icons/RD%20Rebels-a.png" class="icon-support">
+                    <img src="icons/RD%20Rebels.png" class="icon-support">
+                    <img src="icons/CR%20Rebels.png" class="icon-support">
+                    <img src="icons/CR%20Rebels-a.png" class="icon-support">
+                </span>
+                <span class="action-text">Move enemy forces</span>
+            </div>
         </td>
         <td>Assault (EG - Suppress)</td>
         <td>Assault (EG - Suppress)</td>
@@ -251,10 +292,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/Track%20Profits.png" class="icon-support">
-            </span>
-            <span class="action-text">Increase Profits</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/Track%20Profits.png" class="icon-support">
+                </span>
+                <span class="action-text">Increase Profits</span>
+            </div>
         </td>
         <td>Assault (Corp - Mercenaries)</td>
         <td>Assault, Public relations, Exploit</td>
@@ -263,10 +306,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/Track%20Profits.png" class="icon-support">
-            </span>
-            <span class="action-text">Reduce profits</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/Track%20Profits.png" class="icon-support">
+                </span>
+                <span class="action-text">Reduce profits</span>
+            </div>
         </td>
         <td>Petition</td>
         <td></td>
@@ -275,12 +320,14 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/MarGov%20Troops.png" class="icon-support">
-                <img src="icons/Pop.png" class="icon-support">
-                <img src="icons/Damage.png" class="icon-support">
-            </span>
-            <span class="action-text">Fortify</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/MarGov%20Troops.png" class="icon-support">
+                    <img src="icons/Pop.png" class="icon-support">
+                    <img src="icons/Damage.png" class="icon-support">
+                </span>
+                <span class="action-text">Fortify</span>
+            </div>
         </td>
         <td>Entrench</td>
         <td></td>
@@ -289,10 +336,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/MarGov%20Pawn.png" class="icon-support">
-            </span>
-            <span class="action-text">MG resources</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/MarGov%20Pawn.png" class="icon-support">
+                </span>
+                <span class="action-text">MG resources</span>
+            </div>
         </td>
         <td>Petition, Pass</td>
         <td></td>
@@ -301,10 +350,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/RD%20Pawn.png" class="icon-support">
-            </span>
-            <span class="action-text">RD resources</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/RD%20Pawn.png" class="icon-support">
+                </span>
+                <span class="action-text">RD resources</span>
+            </div>
         </td>
         <td></td>
         <td>Exploit</td>
@@ -313,10 +364,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/Campaign%20Back.jpg" class="icon-support">
-            </span>
-            <span class="action-text">Campaign cards</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/Campaign%20Back.jpg" class="icon-support">
+                </span>
+                <span class="action-text">Campaign cards</span>
+            </div>
         </td>
         <td></td>
         <td></td>
@@ -325,10 +378,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/Asset%20Card%20Back.jpg" class="icon-support">
-            </span>
-            <span class="action-text">Asset cards</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/Asset%20Card%20Back.jpg" class="icon-support">
+                </span>
+                <span class="action-text">Asset cards</span>
+            </div>
         </td>
         <td></td>
         <td>Exploit</td>
@@ -337,10 +392,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/Icon_Reset.png" class="icon-support">
-            </span>
-            <span class="action-text">Aldrin Cycler</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/Icon_Reset.png" class="icon-support">
+                </span>
+                <span class="action-text">Aldrin Cycler</span>
+            </div>
         </td>
         <td></td>
         <td>Logistics, Pass</td>
@@ -349,10 +406,12 @@
     </tr>
     <tr>
         <td>
-            <span class="icon-support-stack">
-                <img src="icons/Storm%20Raging.png" class="icon-support">
-            </span>
-            <span class="action-text">Act in Raging Storm</span>
+            <div class="first-col-flex">
+                <span class="icon-support-stack">
+                    <img src="icons/Storm%20Raging.png" class="icon-support">
+                </span>
+                <span class="action-text">Act in Raging Storm</span>
+            </div>
         </td>
         <td>EG-Satellites</td>
         <td>EG-Satellites</td>
